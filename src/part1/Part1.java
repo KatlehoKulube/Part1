@@ -8,6 +8,15 @@ package part1;
  *
  * @author Katleho Kulube
  */
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+class Login {
+
+    private String storedUsername;
+    private String storedPassword;
+    private String firstName;
+    private String lastName;
 public class Part1 {
 
     /**
