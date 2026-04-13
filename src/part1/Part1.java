@@ -6,7 +6,7 @@ package part1;
 
 /**
  *
- * @author Student
+ * @author Katleho Kulube
  */
 public class Part1 {
 
