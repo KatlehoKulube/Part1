@@ -75,6 +75,8 @@ public class Part1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner scanner = new Scanner(System.in);
+        Login login = new Login();
     }
     
 }
