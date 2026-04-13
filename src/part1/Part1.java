@@ -77,6 +77,43 @@ public class Part1 {
         // TODO code application logic here
         Scanner scanner = new Scanner(System.in);
         Login login = new Login();
+        
+                // 🔹 Registration Section
+        System.out.println("===== REGISTRATION =====");
+
+        System.out.print("Enter First Name: ");
+        String firstName = scanner.nextLine();
+
+        System.out.print("Enter Last Name: ");
+        String lastName = scanner.nextLine();
+
+        System.out.print("Enter Username: ");
+        String username = scanner.nextLine();
+
+        System.out.print("Enter Password: ");
+        String password = scanner.nextLine();
+
+        System.out.print("Enter Cell Phone Number (+27...): ");
+        String phone = scanner.nextLine();
+
+        String registrationResult = login.registerUser(username, password, phone, firstName, lastName);
+        System.out.println("\n" + registrationResult);
+
+        // 🔹 Login Section
+        System.out.println("\n===== LOGIN =====");
+
+        System.out.print("Enter Username: ");
+        String loginUsername = scanner.nextLine();
+
+        System.out.print("Enter Password: ");
+        String loginPassword = scanner.nextLine();
+
+        boolean isLoggedIn = login.loginUser(loginUsername, loginPassword);
+
+        System.out.println(login.returnLoginStatus(isLoggedIn));
+
+        scanner.close();
+        
     }
     
 }
